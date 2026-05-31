@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Oluga Emmanuel Abayomi**, Backend Engineer specialising in microservices, distributed systems, and production-grade APIs.
 
-**Live:** [abayomi-portfolio.vercel.app](https://abayomi-portfolio.vercel.app)
+**Live:** [abayomi-portfolio.vercel.app](https://abayomi-portfolio-6lec.vercel.app/#projects)
 
 ---
 
