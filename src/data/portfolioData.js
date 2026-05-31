@@ -96,7 +96,7 @@ export const philosophies = [
   {
     id: "01",
     quote:
-      "I write code for the engineer who maintains it at 2am — clear, tested, documented.",
+      "I write clean code for the engineer who maintains it at 2am — clear, tested, documented.",
   },
   {
     id: "02",
