@@ -1,16 +1,66 @@
-# React + Vite
+# Oluga Emmanuel Abayomi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for **Oluga Emmanuel Abayomi**, Backend Engineer specialising in microservices, distributed systems, and production-grade APIs.
 
-Currently, two official plugins are available:
+**Live:** [abayomi-portfolio.vercel.app](https://abayomi-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** + **Vite** — frontend framework and build tool
+- **EmailJS** — contact form email delivery (no backend required)
+- **Vercel** — deployment and hosting
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│   ├── Skills.jsx
+│   ├── Philosophy.jsx
+│   └── Contact.jsx
+├── data/
+│   └── portfolioData.js   # all content lives here — edit this to update the site
+├── styles/
+│   └── portfolio.css
+├── App.jsx
+└── main.jsx
+```
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Environment Variables
+
+Create a `.env` file in the project root (see `.env.example`):
+
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Get these values from [emailjs.com](https://www.emailjs.com).
+
+## Updating Content
+
+All site content (projects, skills, philosophy quotes, contact links) is managed in one place:
+
+```
+src/data/portfolioData.js
+```
+
+Edit that file and push — no component code needs to change.
+
+---
+
+© 2026 Oluga Emmanuel Abayomi
