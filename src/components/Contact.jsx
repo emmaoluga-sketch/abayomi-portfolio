@@ -3,9 +3,9 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { contacts } from "../data/portfolioData";
 
-const EMAILJS_SERVICE_ID  = "service_yn9btbr";
-const EMAILJS_TEMPLATE_ID = "template_s7grvib";
-const EMAILJS_PUBLIC_KEY  = "AvFGOCDAninKeouHV";
+const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 // ── Icon map ──────────────────────────────────────────────────────────────────
 const icons = {
