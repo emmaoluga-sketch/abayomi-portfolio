@@ -71,11 +71,11 @@ export const projects = [
 export const skills = [
   {
     category: "Languages",
-    items: ["Kotlin", "Java", "Go", "Python", "PHP"],
+    items: ["Kotlin", "Java", "Go", "Python", "PHP", "JavaScript"],
   },
   {
     category: "Frameworks",
-    items: ["Spring Boot", "Spring Security", "Spring Data JPA"],
+    items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Flask", "Django", "Node.js"],
   },
   {
     category: "Architecture",
@@ -83,7 +83,7 @@ export const skills = [
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "Redis", "MySQL"],
+    items: ["PostgreSQL", "Redis", "MySQL", "MongoDB"],
   },
   {
     category: "Cloud & Infra",
