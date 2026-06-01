@@ -4,6 +4,24 @@
 export const projects = [
   {
     id: "01",
+    name: "Rider",
+    tagline: "Uber-scale ride-hailing backend — geospatial matching, real-time tracking, race-free assignment",
+    description:
+      "An Uber-like ride-hailing backend built in Go with clean service-oriented architecture. Implements driver matching via Redis GEOSEARCH, real-time location updates over WebSocket, and race-free ride assignment using distributed locks. Handles authentication, driver/rider profiles, ride requests, and vehicle management on top of PostgreSQL + PostGIS — built to understand how Uber solves geospatial and concurrency problems at scale.",
+    tags: ["Go", "Redis", "WebSockets", "PostgreSQL", "PostGIS", "Distributed Locks"],
+    github: "https://github.com/emmaoluga-sketch/Rider",
+  },
+  {
+    id: "02",
+    name: "Distributed_Ecommerce",
+    tagline: "Rosélia — a distributed bouquet e-commerce platform built on Flask microservices",
+    description:
+      "A distributed e-commerce system using Flask microservices, Docker, and MySQL. Separate services handle users, products, orders, and payments — connected through an API Gateway with RESTful communication. Demonstrates core distributed computing concepts: service separation, independent databases, gateway-based routing, and Docker containerisation for scalable deployment.",
+    tags: ["Python", "Flask", "Docker", "MySQL", "Microservices", "API Gateway"],
+    github: "https://github.com/emmaoluga-sketch/Distributed_Ecommerce",
+  },
+  {
+    id: "03",
     name: "n26-account-acquisition-service",
     tagline: "A terminal-native banking API client built for engineers who live in the CLI",
     description:
@@ -12,7 +30,7 @@ export const projects = [
     github: "https://github.com/emmaoluga-sketch/n26-account-acquisition-service",
   },
   {
-    id: "02",
+    id: "04",
     name: "auth-gateway-service",
     tagline:
       "A battle-tested microservice security backbone with JWT, service discovery, and full test coverage",
@@ -22,30 +40,27 @@ export const projects = [
     github: "https://github.com/emmaoluga-sketch/auth-gateway-service",
   },
   {
-    id: "03",
+    id: "05",
+    name: "StreamPlus-auth",
+    tagline: "A multi-step subscription platform with tiered membership, auth, and dynamic content gating",
+    description:
+      "A Symfony-based multi-step registration system for a fictional streaming service. Features a 4-step flow covering user info, country-specific address validation, payment handling (Luhn algorithm credit card validation), and confirmation — with CSRF protection, session-based persistence between steps, and clean separation between auth, billing state, and content delivery layers.",
+    tags: ["PHP", "Symfony", "Bootstrap", "MySQL", "CSRF", "Doctrine ORM"],
+    github: "https://github.com/emmaoluga-sketch/StreamPlus-auth",
+  },
+  {
+    id: "06",
     name: "Netflix-User-Engagement-Analytics-Pipeline",
     tagline: "An end-to-end analytics pipeline modelling real-world streaming user behaviour at scale",
     description:
       "A fully synthetic but production-realistic data pipeline simulating a Netflix-scale streaming platform — covering user behaviour patterns, content catalog interactions, and engagement metrics. Designed for ML modelling, churn prediction, and business intelligence use cases with clean, well-documented notebooks.",
     tags: ["Python", "Jupyter", "Pandas", "ML", "Data Pipeline"],
-    github:
-      "https://github.com/emmaoluga-sketch/Netflix-User-Engagement-Analytics-Pipeline",
+    github: "https://github.com/emmaoluga-sketch/Netflix-User-Engagement-Analytics-Pipeline",
   },
   {
-    id: "04",
-    name: "StreamPlus-auth",
-    tagline:
-      "A full-stack subscription platform with tiered membership, auth, and dynamic content gating",
-    description:
-      "A subscription-based streaming service delivering both free and premium membership tiers — with a complete authentication system, dynamic content access control, and a templated frontend. Built to simulate real-world freemium monetization logic with clean separation between auth, billing state, and content delivery layers.",
-    tags: ["PHP", "Twig", "JavaScript", "Subscriptions", "Auth"],
-    github: "https://github.com/emmaoluga-sketch/StreamPlus-auth",
-  },
-  {
-    id: "05",
+    id: "07",
     name: "RealTimeVoiceChat",
-    tagline:
-      "A low-latency voice interface that lets you hold a real conversation with an LLM — out loud",
+    tagline: "A low-latency voice interface that lets you hold a real conversation with an LLM — out loud",
     description:
       "A real-time voice conversation system that connects a speech recognition layer to a large language model backend, returning spoken responses with near-zero perceived latency. Combines WebSocket streaming, audio processing, and LLM orchestration into a single deployable stack — with Docker support for instant local setup.",
     tags: ["Python", "JavaScript", "WebSockets", "LLM", "Docker", "Real-time"],
@@ -96,7 +111,7 @@ export const philosophies = [
   {
     id: "01",
     quote:
-      "I write clean code for the engineer who maintains it at 2am — clear, tested, documented.",
+      "I write code for the engineer who maintains it at 2am — clear, tested, documented.",
   },
   {
     id: "02",
@@ -138,7 +153,13 @@ export const contacts = [
     value: "haybee1720",
     href: "https://discord.com/users/haybee1720",
     icon: "message-circle",
-  }
+  },
+  {
+    label: "Portfolio (HR)",
+    value: "oluga-ops-hub",
+    href: "https://oluga-ops-hub.lovable.app/",
+    icon: "globe",
+  },
 ];
 
 export const particles = [
